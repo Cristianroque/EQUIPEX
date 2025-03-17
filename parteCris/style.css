@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    background-color: #2D1E6B;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    height: 35vh;
+    background: url(./img/image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+    color: white;
+}
+
+header h1{
+    font-weight: 800;
+}
+
+header p{
+    width: 30%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+section{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8%;
+}
+
+div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+
+div img{
+    cursor: pointer;
+}
+
+.imgBox{
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    height: 100%;
+}
+
+/*-------SCRIPT----------*/
+
+.Video{
+    position: absolute;
+    background-color: rgb(4, 4, 4, 0.4);
+    transition: all 1s;
+    opacity: 0%;
+    z-index: -1000;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+}
+.boxSVG{
+    position: absolute;
+    width: 5%;
+    top: 4%;
+    right: 2%;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.boxSVG svg{
+    width: 30%;
+}
